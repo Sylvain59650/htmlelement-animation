@@ -1,17 +1,17 @@
 # htmlelement-animation
 
   <div style="display:inline">
-    <a target="_blank" title="build" href="https://travis-ci.org/Sylvain59650/html-components"><img src="https://travis-ci.org/Sylvain59650/html-components.png?branch=master" /></a>
-    <a target="_blank" title="version" href="https://www.npmjs.com/package/html-components"><img src="https://img.shields.io/npm/v/html-components.svg" /></a>
-    <a target="_blank" title="package" href="https://github.com/Sylvain59650/html-components"><img src="https://img.shields.io/github/package-json/v/Sylvain59650/html-components.svg" /></a>
-    <a target="_blank" title="dependencies" href="https://david-dm.org/Sylvain59650/html-components"><img src="https://img.shields.io/david/Sylvain59650/html-components.svg" /></a>
-    <a target="_blank" title="dependencies graph" href="http://npm.anvaka.com/#/view/2d/html-components"><img src="https://img.shields.io/badge/dependencies-graph-blue.svg" /></a>
-    <img src="https://img.shields.io/bundlephobia/min/html-components.svg" />
+    <a target="_blank" title="build" href="https://travis-ci.org/Sylvain59650/htmlelement-animation"><img src="https://travis-ci.org/Sylvain59650/htmlelement-animation.png?branch=master" /></a>
+    <a target="_blank" title="version" href="https://www.npmjs.com/package/htmlelement-animation"><img src="https://img.shields.io/npm/v/htmlelement-animation.svg" /></a>
+    <a target="_blank" title="package" href="https://github.com/Sylvain59650/htmlelement-animation"><img src="https://img.shields.io/github/package-json/v/Sylvain59650/htmlelement-animation.svg" /></a>
+    <a target="_blank" title="dependencies" href="https://david-dm.org/Sylvain59650/htmlelement-animation"><img src="https://img.shields.io/david/Sylvain59650/htmlelement-animation.svg" /></a>
+    <a target="_blank" title="dependencies graph" href="http://npm.anvaka.com/#/view/2d/htmlelement-animation"><img src="https://img.shields.io/badge/dependencies-graph-blue.svg" /></a>
+    <img src="https://img.shields.io/bundlephobia/min/htmlelement-animation.svg" />
     <img src="https://img.shields.io/badge/eslint-ok-blue.svg" />
- <a href="https://codeclimate.com/github/Sylvain59650/html-components/maintainability"><img src="https://api.codeclimate.com/v1/badges/9a5fe2dbf9814c520e21/maintainability" /></a>
-    <a target="_blank" title="tests" href="https://sylvain59650.github.io/html-components/"><img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" /></a>
-    <img src="https://img.shields.io/npm/l/html-components.svg" />
-    <img src="https://hits.dwyl.com/Sylvain59650/html-components.svg" />
+ <a href="https://codeclimate.com/github/Sylvain59650/htmlelement-animation/maintainability"><img src="https://api.codeclimate.com/v1/badges/9a5fe2dbf9814c520e21/maintainability" /></a>
+    <a target="_blank" title="tests" href="https://sylvain59650.github.io/htmlelement-animation/"><img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" /></a>
+    <img src="https://img.shields.io/npm/l/htmlelement-animation.svg" />
+    <img src="https://hits.dwyl.com/Sylvain59650/htmlelement-animation.svg" />
   </div>
 
 
@@ -164,4 +164,4 @@ htmlelement-animation supports the [`prefers-reduced-motion` media query](https:
 
 You can create pull requests to <a href="https://github.com/daneden/animate.css">animate.css</a>
 
-<a href="">API & DEMO</a>
+<a href="https://sylvain59650.github.io/htmlelement-animation/index.html">API & DEMO</a>
