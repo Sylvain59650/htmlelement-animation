@@ -157,18 +157,27 @@
 
 
   <script>
+    // function showAnimation(anim) {
+    //   var style = "modules/htmlelement-animation/dist/css/" + anim + ".min.css";
+    //   document.getStyles([style]);
+    //   qsi("animationSandbox")
+    //     .setClass("")
+    //     .addClass(anim + ' animated')
+    //     .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
+    //       this.setClass("");
+    //     }, {
+    //       once: true
+    //     });
+    // };
+
     function showAnimation(anim) {
       var style = "modules/htmlelement-animation/dist/css/" + anim + ".min.css";
       document.getStyles([style]);
-      qsi("animationSandbox")
-        .setClass("")
-        .addClass(anim + ' animated')
-        .on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-          this.setClass("");
-        }, {
-          once: true
-        });
+      qsi("animationSandbox").animateCss(anim, function() {
+        console.log("end", anim);
+      });
     };
+
 
     document.ready(function() {
       qs('.butt').on("click", function(e) {

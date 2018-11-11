@@ -93,9 +93,9 @@ It's possible to change the duration of your animations, add a delay or change t
 }
 ```
 
-## Usage with jQuery
+## Usage
 
-You can do a whole bunch of other stuff with htmlelement-animation when you combine it with jQuery. A simple example:
+You can do a whole bunch of other stuff with htmlelement-animation when you add classes css to elements. A simple example:
 
 ```javascript
 $('#yourElement').addClass('animated bounceOutLeft');
@@ -103,68 +103,6 @@ $('#yourElement').addClass('animated bounceOutLeft');
 
 You can also detect when an animation ends:
 
-<!--
-Before you make changes to this file, you should know that $('#yourElement').one() is *NOT A TYPO*
-
-http://api.jquery.com/one/
--->
-
-```javascript
-// See https://github.com/daneden/htmlelement-animation/issues/644
-var animationEnd = (function(el) {
-  var animations = {
-    animation: 'animationend',
-    OAnimation: 'oAnimationEnd',
-    MozAnimation: 'mozAnimationEnd',
-    WebkitAnimation: 'webkitAnimationEnd',
-  };
-
-  for (var t in animations) {
-    if (el.style[t] !== undefined) {
-      return animations[t];
-    }
-  }
-})(document.createElement('div'));
-
-$('#yourElement').one(animationEnd, doSomething);
-```
-
-[View a video tutorial](https://www.youtube.com/watch?v=CBQGl6zokMs) on how to use htmlelement-animation with jQuery here.
-
-**Note:** `jQuery.one()` is used when you want to execute the event handler at most _once_. More information [here](http://api.jquery.com/one/).
-
-It's possible to extend jQuery and add a function that does it all for you:
-
-```javascript
-$.fn.extend({
-  animateCss: function(animationName, callback) {
-    var animationEnd = (function(el) {
-      var animations = {
-        animation: 'animationend',
-        OAnimation: 'oAnimationEnd',
-        MozAnimation: 'mozAnimationEnd',
-        WebkitAnimation: 'webkitAnimationEnd',
-      };
-
-      for (var t in animations) {
-        if (el.style[t] !== undefined) {
-          return animations[t];
-        }
-      }
-    })(document.createElement('div'));
-
-    this.addClass('animated ' + animationName).one(animationEnd, function() {
-      $(this).removeClass('animated ' + animationName);
-
-      if (typeof callback === 'function') callback();
-    });
-
-    return this;
-  },
-});
-```
-
-And use it like this:
 
 ```javascript
 $('#yourElement').animateCss('bounce');
@@ -210,30 +148,6 @@ It's possible to control the speed of the animation by adding these classes, as 
 
 > _**Note**: The `animated` class has a default speed of `1s`. If you need custom duration, add it directly to your own CSS code._
 
-## Custom Builds
-
-htmlelement-animation is powered by [gulp.js](http://gulpjs.com/), which means you can create custom builds pretty easily. First of all, you’ll need Gulp and all other dependencies:
-
-```sh
-$ cd path/to/htmlelement-animation/
-$ sudo npm install
-```
-
-Next, run `gulp` to compile your custom builds. For example, if you want only some of the “attention seekers”, simply edit the `animate-config.json` file to select only the animations you want to use.
-
-```javascript
-"attention_seekers": {
-  "bounce": true,
-  "flash": false,
-  "pulse": false,
-  "shake": true,
-  "headShake": true,
-  "swing": true,
-  "tada": true,
-  "wobble": true,
-  "jello":true
-}
-```
 
 ## Accessibility
 
@@ -241,8 +155,13 @@ htmlelement-animation supports the [`prefers-reduced-motion` media query](https:
 
 ## License
 
-htmlelement-animation is licensed under the MIT license. (http://opensource.org/licenses/MIT)
+`htmlelement-animation` is licensed under the MIT license. 
+`htmlelement-animation` is a fork of <a href="https://github.com/daneden/animate.css">animate.css</a>
+
+`animate.css` is also licensed under the MIT license.
 
 ## Contributing
 
-Pull requests are the way to go here. We only have two rules for submitting a pull request: match the naming convention (camelCase, categorised [fades, bounces, etc]) and let us see a demo of submitted animations in a [pen](http://codepen.io). That **last one is important**.
+You can create pull requests to <a href="https://github.com/daneden/animate.css">animate.css</a>
+
+<a href="">API & DEMO</a>
