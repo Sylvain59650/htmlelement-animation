@@ -40,8 +40,7 @@ checks:
 exclude_patterns: 
 - "docs/"
 - "tests/"
-- "distrib/"
-- "styles/"
+- "dist/"
 - "node_modules/"
 - "gulpfile.js"
 - "git*"

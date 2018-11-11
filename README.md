@@ -8,7 +8,7 @@
     <a target="_blank" title="dependencies graph" href="http://npm.anvaka.com/#/view/2d/htmlelement-animation"><img src="https://img.shields.io/badge/dependencies-graph-blue.svg" /></a>
     <img src="https://img.shields.io/bundlephobia/min/htmlelement-animation.svg" />
     <img src="https://img.shields.io/badge/eslint-ok-blue.svg" />
- <a href="https://codeclimate.com/github/Sylvain59650/htmlelement-animation/maintainability"><img src="https://api.codeclimate.com/v1/badges/9a5fe2dbf9814c520e21/maintainability" /></a>
+ <a href="https://codeclimate.com/github/Sylvain59650/htmlelement-animation/maintainability"><img src="https://api.codeclimate.com/v1/badges/36921e2f2843a2f3af27/maintainability" /></a>
     <a target="_blank" title="tests" href="https://sylvain59650.github.io/htmlelement-animation/"><img src="https://img.shields.io/badge/tests-passing-brightgreen.svg" /></a>
     <img src="https://img.shields.io/npm/l/htmlelement-animation.svg" />
     <img src="https://hits.dwyl.com/Sylvain59650/htmlelement-animation.svg" />
@@ -46,6 +46,8 @@ To use htmlelement-animation in your website, simply drop the stylesheet into yo
   <script src="node_modules/htmlelement-animation/dist/htmlelement-animation.min.js"></script>
 </head>
 ```
+
+currently, the complete library (htmlelement-animation.min.css (57 Ko) has 78 effects but if you want only one or two effects, you can use them by loading the file css corresponding to the name of the effect.
 
 
 ### Animations

@@ -4,3 +4,7 @@ tests/
 src/
 .vscode
 gulpfile.js
+.git*
+.eslint*
+.codeclimate*
+htmlelement-animation*
